@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_margin="20dp"
+    android:background="@drawable/bg_of_grid"
+    android:clickable="true"
+    app:cardCornerRadius="30dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/image_delete"
+            android:src="@drawable/delete"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tasktilte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Task Title"
+            android:textColor="#5B37B7"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tasktilte"
+            android:layout_marginLeft="20dp"
+            android:text="Subtitle"
+            android:textColor="#5B37B7" />
+
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtitle"
+            android:layout_marginTop="103dp"
+            android:text="Date"
+            android:textColor="#5B37B7" />
+
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:textColor="#5B37B7"
+            android:id="@+id/txtShowDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textDate"
+            android:text="22-12-2017"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/TimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="190dp"
+            android:text="Time"
+            android:textColor="#5B37B7"
+            android:visibility="visible" />
+
+        <TextView
+            android:textColor="#5B37B7"
+            android:id="@+id/texttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="215dp"
+            android:text="12:00 AM"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
